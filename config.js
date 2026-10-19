@@ -12,4 +12,6 @@ const BUSINESS = {
   mapLink: "",
   hours: "Open daily, 9am – 7pm",
   currency: "UGX",
+  sheetUrl:
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSSMV7b0pBtrVTGCVMWPZG9b8PsYaw0j2lUPcZgV96PcNnmvnAusPGBs2QnQKIQY5sHKpGn3YHYejCn/pub?gid=1713276764&single=true&output=csv",
 };
