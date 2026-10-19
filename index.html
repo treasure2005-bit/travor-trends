@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travor Trends — Women's Fashion in Kampala</title>
+<meta name="description" content="Browse Travor Trends' latest dresses, tops, blazers and more. Pick what you love and send your list on WhatsApp.">
+<meta name="theme-color" content="#2A1166">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Travor Trends home">
+    <img src="logo-mark.svg" alt="" width="44" height="38">
+    <span>Travor Trends</span>
+  </a>
+  <a class="top-wa" id="topWa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Fresh styles.<br>Pick yours,<br>order on WhatsApp.</h1>
+      <p>Browse what we have in store, tap the pieces you like, and send your list to us on WhatsApp.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#shop">Browse styles</a>
+        <a class="btn btn-ghost" id="heroWa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-pics" aria-hidden="true">
+      <img src="images/tt-001-1.jpg" alt="">
+      <img src="images/tt-003-2.jpg" alt="">
+      <img src="images/tt-002-1.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="how" aria-label="How to order">
+    <ol>
+      <li><b>1</b><span>Browse the styles below</span></li>
+      <li><b>2</b><span>Tap <em>Select</em> on what you like</span></li>
+      <li><b>3</b><span>Send your list to us on WhatsApp</span></li>
+    </ol>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="filters" id="filters" role="tablist" aria-label="Filter by category"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="visit" id="contact">
+    <h2>Find us</h2>
+    <div class="visit-grid">
+      <div><h3>Location</h3><p id="vLocation"></p><p id="vMap"></p></div>
+      <div><h3>Call or WhatsApp</h3><p id="vPhone"></p></div>
+      <div><h3>Opening hours</h3><p id="vHours"></p></div>
+    </div>
+    <a class="btn btn-wa" id="visitWa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> Travor Trends</span>
+  <span>Prices confirmed on WhatsApp</span>
+</footer>
+
+<!-- Selection bar -->
+<div class="bar" id="bar" hidden>
+  <span><b id="barCount">0</b> selected</span>
+  <button class="btn btn-wa" id="barOpen">Review &amp; send</button>
+</div>
+
+<!-- List drawer -->
+<div class="overlay" id="drawerOverlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Your list" aria-hidden="true">
+  <div class="drawer-head">
+    <h2>Your list</h2>
+    <button class="x" id="drawerClose" aria-label="Close">&times;</button>
+  </div>
+  <ul class="list" id="list"></ul>
+  <div class="drawer-foot">
+    <a class="btn btn-wa btn-block" id="sendWa" href="#" target="_blank" rel="noopener">Send list on WhatsApp</a>
+    <button class="link" id="clearAll">Clear list</button>
+  </div>
+</aside>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" hidden>
+  <div class="lb-card" role="dialog" aria-modal="true" aria-labelledby="lbName">
+    <button class="x lb-x" id="lbClose" aria-label="Close">&times;</button>
+    <div class="lb-img"><img id="lbImg" alt=""></div>
+    <div class="lb-side">
+      <div class="lb-thumbs" id="lbThumbs"></div>
+      <p class="code" id="lbCode"></p>
+      <h3 id="lbName"></h3>
+      <p class="note" id="lbNote"></p>
+      <p class="price" id="lbPrice"></p>
+      <button class="btn btn-select" id="lbSelect">Select</button>
+      <a class="btn btn-outline" id="lbAsk" href="#" target="_blank" rel="noopener">Ask about this on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
